@@ -8,9 +8,7 @@ body {
     margin: 0px;
     padding: 8px;
     font-family:"Baskervville SC", sans-serif;
-    box-shadow: 7px 7px 10px 3px black;
     width: 17%;
-    border-radius: 5%;
     text-shadow: 2px 2px 0px black;
 }
 
@@ -18,9 +16,22 @@ ul {
     margin: 0px;
 }
 
-body > header {
+#main-header {
     background-color:darkcyan;
     color: white;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-ul {
+    display: flex;
+}
+
+#nav-ul > li {
+    padding: 10px;
+    margin: 15px;
 }
 
 body > header > nav > ul {
@@ -31,11 +42,23 @@ body > header > nav > ul {
 .navbutton {
     color: white;
     text-decoration: none;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 20%;
 }
 
-body > main > article {
-    width: 70%;
+body > main article {
+    width: 80%;
     margin: auto;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-content > div {
+    width: 70%;
 }
 
 form {
@@ -48,8 +71,23 @@ h2 {
 
 body > footer {
     background-color:darkcyan;
+    display: flex;
 }
 
 img {
     border-radius: 10%;
+}
+
+#footer-ul {
+    display: flex;
+    list-style: none;
+}
+
+#footer-ul > div > li {
+    margin-left: 15px;
+}
+
+#footer-ul > div > li > a {
+    text-decoration: none;
+    color: white;
 }
