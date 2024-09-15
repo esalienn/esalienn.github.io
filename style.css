@@ -1,81 +1,66 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    background-color: #D5DBDB;
+    font-family: "Nerko one", 'Times New Roman', Times, serif;
     margin: 0px;
     font-size: 1.5vw;
 }
 
-#logo {
-    margin: 0px;
-    padding: 8px;
-    font-family:"Baskervville SC", sans-serif;
-    width: 17%;
-    text-shadow: 2px 2px 0px black;
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
 }
 
-ul { 
-    margin: 0px;
+.image-container img {
+    width: 100vw;
+    height: auto;
 }
 
-#main-header {
-    background-color:darkcyan;
-    color: white;
-    display: flex;
-    height: 10vh;
-    align-items: center;
-    justify-content: space-between;
+#centred-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Baskervville SC", Helvetica, sans-serif, Arial;
 }
 
 #nav-ul {
     display: flex;
-}
-
-#nav-ul > li {
+    justify-content: center;
+    gap: 20px;
     padding: 10px;
     margin: 15px;
-}
-
-body > header > nav > ul {
     list-style: none;
     text-decoration: none;
 }
 
 .navbutton {
-    color: white;
+    color: black;
+    background-color: #D5DBDB;
     text-decoration: none;
     padding: 12px;
-    border: 1px solid white;
-    border-radius: 20%;
+    border: 1px solid black;
+    border-radius: 30%;
 }
 
-body > main article {
+main {
     width: 80%;
     margin: auto;
+    font-family: "Playpen sans";
 }
 
-#main-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-#main-content > div {
-    width: 70%;
-}
-
-form {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
+main > img {
+    height: 50vh;
+    width: auto;
 }
 
 body > footer {
-    background-color:darkcyan;
-    display: flex;
-}
-
-img {
-    border-radius: 10%;
+    background-color: #6A8097;
 }
 
 #footer-ul {
@@ -89,5 +74,5 @@ img {
 
 #footer-ul > div > li > a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
